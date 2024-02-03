@@ -19,17 +19,48 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- daisy ui  -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
 
 
 </head>
 <body>
     <!---header-->
     <header>
-        <a href="#" class="logo">SAHA <span>IT.</span></a>
+        <!-- <a href="#" class="logo">SAHA <span>IT.</span></a> -->
 
-        <div class="bx bx-menu" id="6"></div>
+        <div class="navbar font-[poppins]">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-52">
+                    <li><a>HOME</a></li>
+                    <li><a>ABOUT</a></li>
+                    <li><a>SERVICE</a></li>
+                    <li><a>PORTFOLIO</a></li>
+                    <li><a>CONTACT</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">SAHA <span class="text-[#13bbff]">IT.</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li class="hover:text-[#13bbff]"><a>HOME</a></li>
+                <li class="hover:text-[#13bbff]"><a>ABOUT</a></li>
+                <li class="hover:text-[#13bbff]"><a>SERVICE</a></li>
+                <li class="hover:text-[#13bbff]"><a>PORTFOLIO</a></li>
+                <li class="hover:text-[#13bbff]"><a>CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">CONTACT ME</a>
+            </div>
+          </div>
         
-        <ul class="navlist">
+        <!-- <ul class="navlist">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#services">SERVICE</a></li>
@@ -40,7 +71,7 @@
         <div class="top-btnn">
             <a href="#" class="h-btn">CONTACT ME</a>
 
-        </div>
+        </div> -->
 
     </header>
     <!--hero-->
@@ -284,7 +315,7 @@
                     <input type="text" placeholder="Your name" required>
                     <input type="email" placeholder="Email Address.." required>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Write message Here..." required></textarea>
-                    <input type="submit" name="" value="Send Message" class="Send-btn">
+                    <a class="btn">Send Message</a>
                 </form>
 
             </div>

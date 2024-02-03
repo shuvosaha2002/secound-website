@@ -126,13 +126,14 @@ section{
 .social i{
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     color: var(--main-color);
     border-radius: 50%;
     backdrop-filter: brightness(88%);
     font-size: 20px;
-    margin-right: 17px;
+    margin-left: 20px;
     box-shadow: 0 0 20px transparent;
     cursor: pointer;
     transition: all .50s ease;
